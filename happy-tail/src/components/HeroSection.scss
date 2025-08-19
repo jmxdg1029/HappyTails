@@ -1,0 +1,43 @@
+
+.hero-section img{
+    margin-top: 3%;
+    border-radius: 50%;
+}
+
+.hero-slide {
+  height:100vh;
+  width:100vh;
+  display:block;
+  overflow: hidden;
+
+}
+
+.image-gallery,
+.image-gallery-content,
+.image-gallery-slide-wrapper,
+.image-gallery-slide {
+    width:100vw;
+    height:100vh;
+    
+}
+
+.image-gallery-slide img{
+    width: 100vw;
+    height:100%;
+    object-fit: cover;
+    object-position: center;
+   
+}
+
+$bg-color: #222;
+
+
+a {
+    color:white;
+    text-decoration: none;
+    opacity: 85%;
+}
+
+a:hover{
+    text-decoration: none;
+}
