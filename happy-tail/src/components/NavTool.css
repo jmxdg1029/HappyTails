@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+.f-size{
+  font-family: 'Roboto', sans-serif;
+}
+
+.navTitle{
+  z-index: 200;
+  position: relative
+}
+
+a:hover{
+    color:#ff4d4d ;
+}
+label .menu{
+    position: absolute;
+    top:70px;
+    left:65px;
+    z-index: 100;
+    border-radius: 50% 50% 30% 30%;
+    -webkit-transition: .5 ease-in-out;
+    transition: .5s ease-in-out;
+    -webkit-box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+          box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+  cursor: pointer;
+}
+
+label .hamburger {
+    position: relative;
+    top:49%;
+    left:1%;
+    width:30px;
+    height:2px;
+    background: #222;
+    display: block;
+    
+}
+label .hamburger:before {
+  top: -10px;
+}
+label .hamburger:after {
+  bottom: -10px;
+}
+label .hamburger:after, label .hamburger:before {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+  }
+
+  label input {
+    display: none;
+  }
+  label input:checked + .menu {
+    -webkit-box-shadow: 0 0 0 15vw #222, 0 0 0 10vh #222;
+            box-shadow: 0 0 0 15vw #222, 0 0 0 10vh #222;
+    border-radius: 40%;
+  }
+
+ 
+  label input:checked + .menu .hamburger:after {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    bottom: 0;
+  }
+  label input:checked + .menu .hamburger:before {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    top: 0;
+  }
+  label input:checked + .menu + ul {
+    opacity: 1;
+  }
+  label input:checked + .navTitle{
+    background-color: #ff4d4d;
+  }
+
+label ul {
+    z-index: 100;
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    -webkit-transform: translate(10%, 10%);
+            transform: translate(10%, 10%);
+    opacity: 0;
+    list-style-type: none;
+    -webkit-transition: .15s 0s ease-in-out;
+    transition: .15s 0s ease-in-out;
+}
+
+ label a {
+   font-size: 1.5em;
+ margin-bottom: 1em;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+    }
+

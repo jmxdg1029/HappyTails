@@ -1,38 +1,95 @@
 .App {
   text-align: center;
+  cursor: default;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  opacity: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#container{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: absolute;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: antiquewhite;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-section{
+  position: relative;
+  height: 100vh;
+  min-height: 100vh;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.red-section{
+  position: relative;
+  height: 100vh;
+  min-height: 100vh;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #ff4d4d;
+}
+
+.yellow-section{
+  cursor: none;
+  position: relative;
+  height: 100vh;
+  min-height: 100vh;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #ffc40c;
+}
+
+.perks-section{
+  cursor: none;
+  position: relative;
+  height: 100vh;
+  min-height: 100vh;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color:black;
+}
+
+.blue-section{
+  cursor: none;
+  position: relative;
+  height: 100vh;
+  min-height: 100vh;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color:#00CED1;
+}
+
+.get-section{
+  cursor: none;
+  position: relative;
+  height: 60vh;
+  min-height: 60vh;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color:black;
+}
+
+.footer-section{
+  cursor: none;
+  position: relative;
+  height: 40vh;
+  min-height: 40vh;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color:#6A5ACD;
 }
