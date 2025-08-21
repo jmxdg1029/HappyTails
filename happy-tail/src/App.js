@@ -4,6 +4,7 @@ import ScrollSnap from 'scroll-snap'
 import NavTool from './components/NavTool';
 import HeroSection from './components/HeroSection';
 import StorySection from './components/StorySection';
+import ServicesSection from './components/ServicesSection';
 import ContactSection from './components/ContactSection';
 
 
@@ -37,6 +38,7 @@ class App extends React.Component{
                
                 <HeroSection />
                 <StorySection/>
+                <ServicesSection/>
                 <ContactSection/>
               </div>
                
