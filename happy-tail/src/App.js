@@ -10,6 +10,9 @@ function callback(){
   console.log('snapped')
 }
 class App extends React.Component{
+
+   
+  
   container = React.createRef();
 
       bindScrollSnap() {
@@ -22,14 +25,20 @@ class App extends React.Component{
     componentDidMount(){
       this.bindScrollSnap()
     }
+      
+    
         render(){
         return (
           <div className="App">
             <NavTool />
+           
               <div id="container" ref={this.container}>
+               
                 <HeroSection />
                 <StorySection/>
+                <StorySection/>
               </div>
+               
           </div>
         );
 

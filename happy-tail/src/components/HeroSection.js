@@ -18,7 +18,7 @@ class HeroSection extends Component {
                 <ImageGallery  additionalClass="hero-slide"className="hero-slide" showThumbnails={false} autoPlay={true} showBullets={true} showNav={false} showFullscreenButton={false} showPlayButton={false} items={image}>
                 </ImageGallery>
            
-            </div>
+        </div>
         );
     }
 }
