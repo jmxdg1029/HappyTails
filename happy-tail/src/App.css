@@ -29,7 +29,7 @@ a{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: #e0eeef;
+  background-color: #6dc3d0;
 }
 
 .red-section{
@@ -57,7 +57,6 @@ a{
 }
 
 .yellow-section{
-  cursor: none;
   position: relative;
   height: 100vh;
   min-height: 100vh;
@@ -68,14 +67,13 @@ a{
 }
 
 .perks-section{
-  cursor: none;
   position: relative;
   height: 100vh;
   min-height: 100vh;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background-color:black;
+  background-color:#e2ae72;
 }
 
 .blue-section{
