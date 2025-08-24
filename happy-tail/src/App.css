@@ -39,7 +39,7 @@ a{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: #f2ad68;
+  background-color: #e2ae72;
   opacity: 1;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
@@ -56,15 +56,7 @@ a{
 	}
 }
 
-.yellow-section{
-  position: relative;
-  height: 100vh;
-  min-height: 100vh;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background-color: #ffc40c;
-}
+
 
 .perks-section{
   position: relative;
@@ -74,6 +66,16 @@ a{
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color:#e2ae72;
+}
+
+.contact-section{
+  position: relative;
+  height: 100vh;
+  min-height: 100vh;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #e2ae72;
 }
 
 .blue-section{

@@ -31,7 +31,7 @@ class StorySection extends Component {
                     <div className="col-md-6">
                         <div>
                        <div className="logo" ><ImageGallery  additionalClass="logo"className="logo" showThumbnails={false} autoPlay={true} showBullets={true} showNav={false} showFullscreenButton={false} showPlayButton={false} items={image}>
-                </ImageGallery></div>
+                        </ImageGallery></div>
                         {/*<p className="h2 text-white story-description">I’ve always loved animals, and after years of helping friends and neighbors care for their pets, I decided to turn my passion into a small business where I can give pets the same love and attention I give my own.</p>*/}
                         </div>
                     </div>

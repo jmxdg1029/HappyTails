@@ -23,5 +23,11 @@ a:hover{
   text-align: center;
   justify-content: center;
   align-items: center;
+  border: 1px;
   
+}
+
+.navTitle img {
+  border-style: solid;
+  border: 1px;
 }
