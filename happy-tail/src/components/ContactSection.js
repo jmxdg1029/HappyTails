@@ -8,7 +8,7 @@ const ContactSection = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "18e0222c-06ec-4f23-97d2-241274cbdc58");
+    formData.append("access_key", "35c0ae97-eb5c-46f7-b58b-fec0d5b1de3f");
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -51,11 +51,10 @@ const ContactSection = () => {
                                 <button type="submit">Send Message</button>
                     </form>
                </div>
-               <div className='col-md-6'>
+               <div className='col-md-6 maps'>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2864.0703473907524!2d-79.59796208708731!3d44.12317112178573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84eea19fb9dff979%3A0x5f3b41fe6cb4f546!2sHappy%20Tails%20Pet%20Sitting!5e0!3m2!1sen!2sca!4v1756087992674!5m2!1sen!2sca" 
                     width="900" 
                     height="850" 
-                    style={{border:"0"}}
                      allowfullscreen="" 
                      loading="lazy" 
                      referrerpolicy="no-referrer-when-downgrade">
