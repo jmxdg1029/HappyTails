@@ -13,21 +13,48 @@ a:hover{
   text-align: center;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .navTitle{
   position: relative;
-  display:block;
+  display: block;
   margin-top: 4%;
-  margin-left:25% ;
+  margin-left: 25%;
   text-align: center;
   justify-content: center;
   align-items: center;
   border: 1px;
-  
 }
 
 .navTitle img {
   border-style: solid;
   border: 1px;
+}
+
+/* Responsive navigation */
+@media (max-width: 768px) {
+  .navTitle {
+    margin-top: 2%;
+    margin-left: 15%;
+  }
+  
+  .navTitle img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .navTitle {
+    margin-top: 1%;
+    margin-left: 10%;
+  }
+  
+  .navTitle img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+  }
 }

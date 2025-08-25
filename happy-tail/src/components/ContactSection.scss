@@ -1,5 +1,5 @@
 .contact-section{
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -8,12 +8,12 @@
 form{
     max-width: 700px;
     width: 100%;
-    background-color: #EDBF8B;
-    color: black;
+    background: linear-gradient(135deg, #f5e6d3 0%, #e8d5b8 100%);
+    color: #2c1810;
     padding: 25px 25px 25px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
-    margin: 305px
+    margin: 305px;
 }
 
 form h2{
@@ -22,19 +22,19 @@ form h2{
 }
 
 form .input-box{
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 .input-box .field{
     width: 100%;
-    height:70px;
-    background: transparent;
-    border: 2px solid black;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 2px solid #8b4513;
     outline: none;
     border-radius: 6px;
-    padding:15px;
+    padding: 15px;
     font-size: 16px;
-    color:black;
+    color: #2c1810;
     margin-top: 8px;
 }
 
@@ -44,20 +44,20 @@ form .input-box{
 
 form button{
     width: 100%;
-    height:55px;
-    background: #826afb;
-    border:none;
+    height: 55px;
+    background: linear-gradient(135deg, #8b4513 0%, #a0522d 100%);
+    border: none;
     box-shadow: 0 0 10px rgba(0,0,0,.1) ;
     cursor: pointer;
     font-size: 16px;
-    color:#fff;
+    color: #fff;
     font-weight: 500;
     margin-top: 25px;
     transition: .5s;
 }
 
 form button:hover {
-    background: #624ec6;
+    background: linear-gradient(135deg, #a0522d 0%, #cd853f 100%);
 }
 
 .contact-section h2{
@@ -66,10 +66,91 @@ form button:hover {
 }
 
 .maps{
-    background-color: #EDBF8B;
-    border: 2px solid #EDBF8B;
+    background: linear-gradient(135deg, #f5e6d3 0%, #e8d5b8 100%);
+    border: 2px solid #8b4513;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
     padding: 15px;
     width: 37%;
+}
+
+/* Responsive contact section */
+@media (max-width: 1200px) {
+  .contact-section h2 {
+    font-size: 3.5em;
+  }
+  
+  .maps {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section h2 {
+    font-size: 3em;
+  }
+  
+  form {
+    padding: 20px;
+    margin: 150px;
+  }
+  
+  form h2 {
+    font-size: 24px;
+  }
+  
+  .input-box .field {
+    height: 60px;
+    font-size: 14px;
+  }
+  
+  .input-box .text {
+    height: 250px;
+  }
+  
+  form button {
+    height: 50px;
+    font-size: 14px;
+  }
+  
+  .maps {
+    width: 60%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section h2 {
+    font-size: 2.5em;
+  }
+  
+  form {
+    padding: 15px;
+    margin: 100px;
+  }
+  
+  form h2 {
+    font-size: 20px;
+  }
+  
+  .input-box .field {
+    height: 55px;
+    font-size: 13px;
+    padding: 12px;
+  }
+  
+  .input-box .text {
+    height: 200px;
+  }
+  
+  form button {
+    height: 45px;
+    font-size: 13px;
+    margin-top: 20px;
+  }
+  
+  .maps {
+    width: 80%;
+    padding: 8px;
+  }
 }

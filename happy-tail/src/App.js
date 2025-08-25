@@ -1,4 +1,4 @@
-import React, {Componenet} from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import ScrollSnap from 'scroll-snap'
 import NavTool from './components/NavTool';
@@ -18,14 +18,29 @@ class App extends React.Component{
   container = React.createRef();
 
       bindScrollSnap() {
-      const element = this.container.current
-      const snapElement = new ScrollSnap(element, {
-        snapDestinationY: '100%',
-      })
-      snapElement.bind(callback)
-    }
+        const element = this.container.current;
+        // Only enable scroll snap on larger screens
+        if (window.innerWidth > 768) {
+          const snapElement = new ScrollSnap(element, {
+            snapDestinationY: '100%',
+          });
+          snapElement.bind(callback);
+        }
+      }
     componentDidMount(){
-      this.bindScrollSnap()
+      this.bindScrollSnap();
+      // Add resize listener for responsive behavior
+      window.addEventListener('resize', this.handleResize);
+    }
+
+    componentWillUnmount() {
+      // Clean up resize listener
+      window.removeEventListener('resize', this.handleResize);
+    }
+
+    handleResize = () => {
+      // Re-bind scroll snap on resize
+      this.bindScrollSnap();
     }
       
     
